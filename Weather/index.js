@@ -30,11 +30,11 @@ const getWeather = (city)=>{
         document.querySelector(".wind").innerHTML=response.wind_speed + " km/h";
         
         if(response.temp >= 30){
-          weatherIcon.src = "clear.png";
+          weatherIcon.src = "Weather/clear.png";
         }else if(response.temp <= 30 && response.temp >22 ){
-          weatherIcon.src = "mist.png";
+          weatherIcon.src = "Weather/mist.png";
         }else if(response.temp <= 22 && response.temp >16){
-          weatherIcon.src = "clouds.png";
+          weatherIcon.src = "Weather/clouds.png";
         }else if(response.temp <= 16 && response.temp >8 ){
           weatherIcon.src = "drizzle.png";
         }else if(response.temp <= 8 && response.temp >4){
